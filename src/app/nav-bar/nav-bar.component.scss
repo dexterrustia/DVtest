@@ -1,0 +1,34 @@
+.nav-logo {
+  height: inherit;
+  cursor: pointer !important;
+}
+.nav-logo:hover {
+  background: #ffc0cb5e;
+}
+.nav-button {
+  width: 100px;
+  font-weight: bolder;
+  height: inherit;
+  text-align: center;
+  line-height: 59px;
+  cursor: pointer !important;
+}
+.nav-button:hover {
+  background: #ffc0cb5e;
+}
+
+.nav-profile-container {
+  margin-right: 10px;
+
+  .nav-profile-picture {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+  }
+  .nav-profile-name {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,21 @@
+.contact-container {
+  width: 600px;
+  height: 300px;
+  margin: 0 auto;
+
+  .card-contact {
+    display: block;
+
+    .text-container {
+      width: 80%;
+      margin: 0 auto;
+      display: block;
+    }
+
+    .btn-submit {
+      width: 20%;
+      margin: 0 auto;
+      display: block;
+    }
+  }
+}

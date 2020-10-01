@@ -1,0 +1,35 @@
+<div class="contact-container">
+  <mat-card class="card-contact">
+    <mat-card-subtitle>Contant</mat-card-subtitle>
+    <form class="example-form">
+      <div *ngIf="binUrl">
+        view test cases <a href="{{ binUrl }}" target="_blank">here</a><br />
+        <span style="font-size: small">
+          NOTE: Once you leave contact page your test cases will gone once you
+          re-enter this page again. This is becuase we are creating new bin
+          every time.
+        </span>
+      </div>
+      <p>
+        <mat-form-field appearance="outline" class="text-container">
+          <mat-label>Contact</mat-label>
+          <input
+            matInput
+            [(ngModel)]="contactName"
+            name="contactName"
+            placeholder="Please enter contact name"
+            width="300px"
+          />
+        </mat-form-field>
+      </p>
+      <button
+        class="btn-submit"
+        mat-raised-button
+        color="primary"
+        (click)="onSubmit()"
+      >
+        submit
+      </button>
+    </form>
+  </mat-card>
+</div>

@@ -1,0 +1,15 @@
+.profile-container {
+  width: 600px;
+  display: block;
+  margin: 0 auto;
+
+  .sub-container {
+    display: inline-flex;
+
+    .card-profile {
+      width: 450px;
+      overflow-wrap: break-word;
+      margin-left: 15px;
+    }
+  }
+}

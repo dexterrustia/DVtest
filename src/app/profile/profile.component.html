@@ -1,0 +1,30 @@
+<div class="profile-container">
+  <div class="sub-container">
+    <div>
+      <img
+        class="profile-picture"
+        width="100"
+        height="100"
+        src="{{ photoUrl }}"
+      />
+    </div>
+    <div>
+      <mat-card class="card-profile">
+        <mat-card-subtitle>Profile</mat-card-subtitle>
+        <div>ID: {{ id }}</div>
+        <br />
+        <div>Name: {{ name }}</div>
+        <br />
+        <div>Email: {{ email }}</div>
+        <br />
+        <div>authToken: {{ authToken }}</div>
+        <br />
+        <div>ID Token: {{ idToken }}</div>
+        <br />
+        <div>Authorization code: {{ authorizationCode }}</div>
+        <br />
+        <div>Response: {{ response }}</div>
+      </mat-card>
+    </div>
+  </div>
+</div>
