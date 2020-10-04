@@ -1,6 +1,7 @@
 <div class="contact-container">
   <mat-card class="card-contact">
     <mat-card-subtitle>Contant</mat-card-subtitle>
+    <span class="message" style="visibility: collapse">{{ message }}</span>
     <form class="example-form">
       <div *ngIf="binUrl">
         view test cases <a href="{{ binUrl }}" target="_blank">here</a><br />

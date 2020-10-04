@@ -17,6 +17,7 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
     this.authService.authState.subscribe((user) => {
       if (user) {
+        this.loggedIn = true;
         this.router.navigateByUrl('/profile');
       }
     });
@@ -25,6 +26,8 @@ export class LoginComponent implements OnInit {
   signInWithGoogle(): void {
     this.authService.signIn(GoogleLoginProvider.PROVIDER_ID).then((r) => {
       console.log(r);
+      this.user = r;
+      console.log('user => ');
       console.log(this.user);
       this.router.navigateByUrl('/profile');
     });

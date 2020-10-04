@@ -20,8 +20,10 @@ import { LoggedInGuard } from './guards/logged-in.guard';
 import {
   SocialLoginModule,
   SocialAuthServiceConfig,
+  SocialAuthService,
 } from 'angularx-social-login';
 import { GoogleLoginProvider } from 'angularx-social-login';
+import { windowProvider, WindowToken } from './injector/window';
 
 @NgModule({
   declarations: [
@@ -45,6 +47,8 @@ import { GoogleLoginProvider } from 'angularx-social-login';
     ContactService,
     UserService,
     LoggedInGuard,
+    SocialAuthService,
+    { provide: WindowToken, useFactory: windowProvider },
     {
       provide: 'SocialAuthServiceConfig',
       useValue: {

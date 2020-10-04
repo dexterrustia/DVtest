@@ -6,6 +6,26 @@ export class AppPage {
   }
 
   getTitleText(): Promise<string> {
-    return element(by.css('app-root .content span')).getText() as Promise<string>;
+    return browser.getTitle().then((res) => {
+      console.log(res);
+      return res;
+    }) as Promise<string>;
+    //return element(by.css('app-root .content span')).getText() as Promise<string>;
+  }
+
+  get NavButtonContact() {
+    return element(by.className('nav-contact'));
+  }
+
+  get NavButtonAbout() {
+    return element(by.className('nav-about'));
+  }
+
+  get googleLoginButton() {
+    return element(by.className('btn-google-login'));
+  }
+
+  get AboutContainer() {
+    return element(by.className('about-conatiner'));
   }
 }

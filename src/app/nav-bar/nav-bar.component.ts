@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { SocialAuthService } from 'angularx-social-login';
+import { ViewChild } from '@angular/core';
+import { MatMenuTrigger } from '@angular/material/menu';
 
 @Component({
   selector: 'app-nav-bar',
@@ -13,6 +15,8 @@ export class NavBarComponent implements OnInit {
   profileUrl: string;
   name: string = '';
   loggedIn: boolean = false;
+
+  @ViewChild('menuTrigger') menuTrigger: MatMenuTrigger;
 
   constructor(private authService: SocialAuthService, private router: Router) {}
 
