@@ -2,6 +2,7 @@ import {
   async,
   ComponentFixture,
   fakeAsync,
+  flushMicrotasks,
   TestBed,
   tick,
 } from '@angular/core/testing';
@@ -42,7 +43,8 @@ describe('LoginComponent', () => {
   let location: Location;
   let authService: SocialAuthService;
   let socialSignInSpy: jasmine.Spy;
-  let authSpy: jasmine.SpyObj<SocialAuthService>;
+  let authSpy: jasmine.Spy;
+  let authStateSpy: jasmine.Spy;
   let setHrefSpy: jasmine.Spy;
 
   //TEST USER
@@ -70,7 +72,7 @@ describe('LoginComponent', () => {
       ],
       declarations: [LoginComponent],
       providers: [
-        { provide: SocialAuthService, useValue: authSpy },
+        SocialAuthService,
         {
           provide: 'SocialAuthServiceConfig',
           useValue: {
@@ -100,6 +102,9 @@ describe('LoginComponent', () => {
     component = fixture.componentInstance;
     authService = TestBed.get(SocialAuthService);
     setHrefSpy = spyOnProperty(MockWindow.location, 'href', 'set');
+    authSpy = spyOn(authService, 'signIn').and.returnValue(
+      Promise.resolve(googleUser)
+    );
     fixture.detectChanges();
   });
 
@@ -115,12 +120,13 @@ describe('LoginComponent', () => {
     expect(location.path()).toBe('/profile');
   }));
 
-  it('LOGGED IN USER, should skip login page', () => {
-    authSpy = spyOn(authService, 'signIn').and.returnValue(
-      Promise.resolve(googleUser)
+  it('LOGGED IN USER, should directly go to "/profile"', fakeAsync(() => {
+    authStateSpy = spyOnProperty(authService, 'authState').and.returnValue(
+      of(googleUser)
     );
     component.ngOnInit();
     fixture.detectChanges();
+    flushMicrotasks();
     expect(location.path()).toBe('/profile');
-  });
+  }));
 });

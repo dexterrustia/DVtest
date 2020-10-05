@@ -3,10 +3,10 @@ import {
   async,
   ComponentFixture,
   fakeAsync,
+  flushMicrotasks,
   TestBed,
   tick,
 } from '@angular/core/testing';
-import { spyOnClass } from 'jasmine-es6-spies';
 
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -14,11 +14,13 @@ import { MaterialModule } from '../material/material.module';
 import { ContactService } from '../services/contact.service';
 
 import { ContactsComponent } from './contacts.component';
+import { of } from 'rxjs';
 
 describe('ContactsComponent', () => {
   let component: ContactsComponent;
   let fixture: ComponentFixture<ContactsComponent>;
-  let contactService: jasmine.SpyObj<ContactService>;
+  let contactService: ContactService;
+  let createBinSpy: jasmine.Spy;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
@@ -31,13 +33,7 @@ describe('ContactsComponent', () => {
         MaterialModule,
       ],
       declarations: [ContactsComponent],
-      providers: [
-        ContactService,
-        // {
-        //   provide: ContactService,
-        //   useFactory: () => spyOnClass(ContactService),
-        // },
-      ],
+      providers: [ContactService],
     }).compileComponents();
   }));
 
@@ -46,20 +42,26 @@ describe('ContactsComponent', () => {
     component = fixture.componentInstance;
     contactService = TestBed.get(ContactService);
     fixture.detectChanges();
+    createBinSpy = spyOn(contactService, 'createBin').and.returnValue(
+      of({
+        binId: '1601868408364-4212551461532',
+        now: 1601868408364,
+        expires: 1601870208364,
+      })
+    );
   });
 
-  it('contact component should load', () => {
+  it('contact component should load', fakeAsync(() => {
+    expect(component).toBeTruthy();
     expect(
       fixture.debugElement.nativeElement.querySelector('.contact-container')
     ).toBeTruthy();
-  });
+  }));
 
   it('should initialize a binId in postBin', fakeAsync(() => {
-    const fixture = TestBed.createComponent(ContactsComponent);
-    const app = fixture.componentInstance;
-    let message: string;
-    //   setTimeout(() => {
-    //     expect(app.message).toEqual('Bin is created');
-    //   }, 1000);
+    component.ngOnInit();
+    fixture.detectChanges();
+    flushMicrotasks();
+    expect(component.message).toEqual('Bin is created');
   }));
 });

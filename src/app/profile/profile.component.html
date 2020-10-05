@@ -11,19 +11,36 @@
     <div>
       <mat-card class="card-profile">
         <mat-card-subtitle>Profile</mat-card-subtitle>
-        <div>ID: {{ id }}</div>
+        <div>
+          ID: <span class="span-user-id">{{ id }} </span>
+        </div>
         <br />
-        <div>Name: {{ name }}</div>
+        <div>
+          Name: <span class="span-user-name">{{ name }} </span>
+        </div>
         <br />
-        <div>Email: {{ email }}</div>
+        <div>
+          Email: <span class="span-user-email">{{ email }} </span>
+        </div>
         <br />
-        <div>authToken: {{ authToken }}</div>
+        <div>
+          authToken: <span class="span-user-authToken">{{ authToken }} </span>
+        </div>
         <br />
-        <div>ID Token: {{ idToken }}</div>
+        <div>
+          ID Token: <span class="span-user-idToken">{{ idToken }} </span>
+        </div>
         <br />
-        <div>Authorization code: {{ authorizationCode }}</div>
+        <div>
+          Authorization code:
+          <span class="span-user-authorizationCode"
+            >{{ authorizationCode }}
+          </span>
+        </div>
         <br />
-        <div>Response: {{ response }}</div>
+        <div>
+          Response: <span class="span-user-response">{{ response }} </span>
+        </div>
       </mat-card>
     </div>
   </div>

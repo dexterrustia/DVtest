@@ -19,7 +19,7 @@ export class ContactsComponent implements OnInit {
       .createBin()
       .toPromise()
       .then((response) => {
-        console.log('response');
+        console.log(response);
         this.requestURL = 'https://postb.in/' + response['binId'];
         this.binUrl = 'https://postb.in/b/' + response['binId'];
 
