@@ -4,7 +4,9 @@
     <span class="message" style="visibility: collapse">{{ message }}</span>
     <form class="example-form">
       <div class="div-note" *ngIf="binUrl">
-        view test cases <a href="{{ binUrl }}" target="_blank">here</a><br />
+        view test cases
+        <a href="{{ binUrl }}" class="a-test-link" target="_blank">here</a
+        ><br />
         <span style="font-size: small">
           NOTE: Once you leave contact page your test cases will gone once you
           re-enter this page again. This is becuase we are creating new bin
@@ -18,6 +20,7 @@
             matInput
             [(ngModel)]="contactName"
             name="contactName"
+            class="input-contact-name"
             placeholder="Please enter contact name"
             width="300px"
           />

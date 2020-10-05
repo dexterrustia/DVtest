@@ -31,4 +31,8 @@ export class AppPage {
   get AboutContainer() {
     return element(by.className('about-conatiner'));
   }
+
+  get ContactTextBox() {
+    return element(by.name('contactName'));
+  }
 }

@@ -4,6 +4,7 @@ import { SSL_OP_NO_TICKET } from 'constants';
 
 describe('workspace-project App', () => {
   let page: AppPage;
+  let baseUrl: string = 'http://localhost:4200';
 
   beforeEach(() => {
     page = new AppPage();
@@ -19,21 +20,31 @@ describe('workspace-project App', () => {
     page.navigateTo();
     page.NavButtonAbout.click();
     expect(element(by.className('about-container'))).toBeTruthy();
-    expect(browser.getCurrentUrl).toEqual('/about');
+    expect(browser.getCurrentUrl()).toEqual(`${baseUrl}/about`);
   });
 
-  xit('should goto "/contact"', () => {
+  it('should goto "/contact"', () => {
     page.navigateTo();
     page.NavButtonContact.click();
-    expect(element(by.className('about-container'))).toBeTruthy();
-    expect(browser.getCurrentUrl()).toEqual('/contact');
+
+    expect(element(by.className('about-contact'))).toBeTruthy();
+    expect(browser.getCurrentUrl()).toEqual(`${baseUrl}/contact`);
+    expect(element(by.name('contactName'))).toBeTruthy();
+
+    let contact = element(by.css('.input-contact-name'));
+    contact.sendKeys('this is my text');
+
+    setTimeout(() => {
+      element(by.css('.btn-submit')).click();
+      element(by.css('a-test-link')).click();
+    }, 10000);
   });
 
-  it('should to go "/profile" after logging in', () => {
+  xit('should to go "/profile" after logging in', () => {
     page.navigateTo();
     page.googleLoginButton.click();
     setTimeout(() => {
-      expect(browser.getCurrentUrl()).toEqual('/profile');
+      expect(browser.getCurrentUrl()).toEqual(`${baseUrl}/profile`);
     }, 10000);
 
     page.NavButtonAbout.click();
