@@ -12,6 +12,9 @@ export class AppPage {
     }) as Promise<string>;
     //return element(by.css('app-root .content span')).getText() as Promise<string>;
   }
+  get NavButtonLogo() {
+    return element(by.className('nav-logo'));
+  }
 
   get NavButtonContact() {
     return element(by.className('nav-contact'));

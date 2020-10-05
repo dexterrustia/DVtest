@@ -1,5 +1,6 @@
 import { AppPage } from './app.po';
 import { browser, logging, by, element } from 'protractor';
+import { SSL_OP_NO_TICKET } from 'constants';
 
 describe('workspace-project App', () => {
   let page: AppPage;
@@ -17,15 +18,26 @@ describe('workspace-project App', () => {
   it('should goto "/about"', () => {
     page.navigateTo();
     page.NavButtonAbout.click();
-    debugger;
     expect(element(by.className('about-container'))).toBeTruthy();
-    // expect(browser.getCurrentUrl()).toEqual('http://localhost:4000/about');
+    expect(browser.getCurrentUrl).toEqual('/about');
   });
 
-  it('should goto "/contact"', () => {
+  xit('should goto "/contact"', () => {
     page.navigateTo();
     page.NavButtonContact.click();
-    expect(browser.getCurrentUrl()).toEqual('http://localhost:4000/contact');
+    expect(element(by.className('about-container'))).toBeTruthy();
+    expect(browser.getCurrentUrl()).toEqual('/contact');
+  });
+
+  it('should to go "/profile" after logging in', () => {
+    page.navigateTo();
+    page.googleLoginButton.click();
+    setTimeout(() => {
+      expect(browser.getCurrentUrl()).toEqual('/profile');
+    }, 10000);
+
+    page.NavButtonAbout.click();
+    page.NavButtonLogo.click();
   });
 
   afterEach(async () => {

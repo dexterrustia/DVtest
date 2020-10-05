@@ -57,7 +57,7 @@ import { windowProvider, WindowToken } from './injector/window';
           {
             id: GoogleLoginProvider.PROVIDER_ID,
             provider: new GoogleLoginProvider(
-              '578985095016-p0n6gpdfobla1l1ja16np7b0h02m14fj'
+              '852521361299-q90tsiud02gfj9t8lsk3cm1br6894nft'
             ),
           },
         ],
