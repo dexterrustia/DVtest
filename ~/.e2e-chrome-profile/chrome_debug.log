@@ -1,20 +1,86 @@
-[59427:775:1005/161711.359114:INFO:CONSOLE(53426)] "Angular is running in development mode. Call enableProdMode() to enable production mode.", source: http://localhost:4200/vendor.js (53426)
-[59427:775:1005/161711.448701:INFO:CONSOLE(564)] "this.user undefined", source: http://localhost:4200/main.js (564)
-[59427:775:1005/161711.642750:INFO:CONSOLE(0)] "[DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o", source: http://localhost:4200/ (0)
-[59427:775:1005/161711.851152:INFO:CONSOLE(103193)] "[WDS] Live Reloading enabled.", source: http://localhost:4200/vendor.js (103193)
-[59427:775:1005/161712.413516:INFO:CONSOLE(377)] "No user is currently logged in with GOOGLE", source: http://localhost:4200/polyfills.js (377)
-[59427:775:1005/161713.966796:INFO:CONSOLE(53426)] "Angular is running in development mode. Call enableProdMode() to enable production mode.", source: http://localhost:4200/vendor.js (53426)
-[59427:775:1005/161714.012835:INFO:CONSOLE(564)] "this.user undefined", source: http://localhost:4200/main.js (564)
-[59427:775:1005/161714.115185:INFO:CONSOLE(0)] "[DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o", source: http://localhost:4200/ (0)
-[59427:775:1005/161714.285185:INFO:CONSOLE(103193)] "[WDS] Live Reloading enabled.", source: http://localhost:4200/vendor.js (103193)
-[59427:775:1005/161714.700218:INFO:CONSOLE(377)] "No user is currently logged in with GOOGLE", source: http://localhost:4200/polyfills.js (377)
-[59427:775:1005/161716.622501:INFO:CONSOLE(53426)] "Angular is running in development mode. Call enableProdMode() to enable production mode.", source: http://localhost:4200/vendor.js (53426)
-[59427:775:1005/161716.705570:INFO:CONSOLE(564)] "this.user undefined", source: http://localhost:4200/main.js (564)
-[59427:775:1005/161716.849484:INFO:CONSOLE(0)] "[DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o", source: http://localhost:4200/ (0)
-[59427:775:1005/161716.980037:INFO:CONSOLE(103193)] "[WDS] Live Reloading enabled.", source: http://localhost:4200/vendor.js (103193)
-[59427:775:1005/161717.404783:INFO:CONSOLE(377)] "No user is currently logged in with GOOGLE", source: http://localhost:4200/polyfills.js (377)
-[59427:775:1005/161717.528562:INFO:CONSOLE(396)] "", source: http://localhost:4200/main.js (396)
-[59427:775:1005/161718.726733:INFO:CONSOLE(385)] "[object Object]", source: http://localhost:4200/main.js (385)
-[59427:775:1005/161718.729696:INFO:CONSOLE(388)] "requestURL https://postb.in/1601885838610-4957477955613", source: http://localhost:4200/main.js (388)
-[59427:775:1005/161718.730043:INFO:CONSOLE(389)] "binUrl https://postb.in/b/1601885838610-4957477955613", source: http://localhost:4200/main.js (389)
-[59427:775:1005/161719.481867:WARNING:pref_notifier_impl.cc(40)] Pref observer for media_router.cast_allow_all_ips found at shutdown.
+[61131:775:1005/171149.057338:INFO:CONSOLE(53426)] "Angular is running in development mode. Call enableProdMode() to enable production mode.", source: http://localhost:4200/vendor.js (53426)
+[61131:775:1005/171149.154977:INFO:CONSOLE(564)] "this.user undefined", source: http://localhost:4200/main.js (564)
+[61131:775:1005/171149.359642:INFO:CONSOLE(0)] "[DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o", source: http://localhost:4200/ (0)
+[61131:775:1005/171149.700705:INFO:CONSOLE(103193)] "[WDS] Live Reloading enabled.", source: http://localhost:4200/vendor.js (103193)
+[61131:775:1005/171150.770915:INFO:CONSOLE(377)] "No user is currently logged in with GOOGLE", source: http://localhost:4200/polyfills.js (377)
+[61139:775:1005/171151.532108:WARNING:ipc_message_attachment_set.cc(49)] MessageAttachmentSet destroyed with unconsumed attachments: 0/1
+[61139:775:1005/171151.532838:WARNING:ipc_message_attachment_set.cc(49)] MessageAttachmentSet destroyed with unconsumed attachments: 0/1
+[61139:775:1005/171151.533441:WARNING:ipc_message_attachment_set.cc(49)] MessageAttachmentSet destroyed with unconsumed attachments: 0/1
+[61139:775:1005/171151.533553:WARNING:ipc_message_attachment_set.cc(49)] MessageAttachmentSet destroyed with unconsumed attachments: 0/1
+[61139:775:1005/171151.736129:WARNING:ipc_message_attachment_set.cc(49)] MessageAttachmentSet destroyed with unconsumed attachments: 0/1
+[61139:775:1005/171151.737148:WARNING:ipc_message_attachment_set.cc(49)] MessageAttachmentSet destroyed with unconsumed attachments: 0/1
+[61139:775:1005/171151.751722:ERROR:shared_image_manager.cc(143)] SharedImageManager::ProduceGLTexture: Trying to produce a representation from a non-existent mailbox. C6:FE:44:2E:FD:3C:51:97:43:7C:FB:55:87:2E:37:9D
+[61139:775:1005/171151.752167:ERROR:gles2_cmd_decoder.cc(18929)] [.DisplayCompositor]GL ERROR :GL_INVALID_OPERATION : DoCreateAndTexStorage2DSharedImageINTERNAL: invalid mailbox name
+[61139:775:1005/171151.752242:ERROR:gles2_cmd_decoder.cc(18950)] [.DisplayCompositor]GL ERROR :GL_INVALID_OPERATION : DoBeginSharedImageAccessCHROMIUM: bound texture is not a shared image
+[61139:775:1005/171151.752381:ERROR:gles2_cmd_decoder.cc(13814)] [.DisplayCompositor]GL ERROR :GL_INVALID_VALUE : glScheduleCALayerCHROMIUM: unsupported texture format
+[61139:775:1005/171151.752501:ERROR:shared_image_manager.cc(143)] SharedImageManager::ProduceGLTexture: Trying to produce a representation from a non-existent mailbox. 5A:C7:D2:56:1E:00:B5:5D:6A:BF:8B:F0:09:D4:BA:B7
+[61139:775:1005/171151.752579:ERROR:gles2_cmd_decoder.cc(18929)] [.DisplayCompositor]GL ERROR :GL_INVALID_OPERATION : DoCreateAndTexStorage2DSharedImageINTERNAL: invalid mailbox name
+[61139:775:1005/171151.752636:ERROR:gles2_cmd_decoder.cc(18950)] [.DisplayCompositor]GL ERROR :GL_INVALID_OPERATION : DoBeginSharedImageAccessCHROMIUM: bound texture is not a shared image
+[61139:775:1005/171151.752754:ERROR:gles2_cmd_decoder.cc(13814)] [.DisplayCompositor]GL ERROR :GL_INVALID_VALUE : glScheduleCALayerCHROMIUM: unsupported texture format
+[61139:775:1005/171151.752810:ERROR:shared_image_manager.cc(143)] SharedImageManager::ProduceGLTexture: Trying to produce a representation from a non-existent mailbox. EE:73:C7:E5:9E:A1:14:DB:9C:AC:4A:05:37:00:03:B1
+[61139:775:1005/171151.752908:ERROR:gles2_cmd_decoder.cc(18929)] [.DisplayCompositor]GL ERROR :GL_INVALID_OPERATION : DoCreateAndTexStorage2DSharedImageINTERNAL: invalid mailbox name
+[61139:775:1005/171151.753037:ERROR:gles2_cmd_decoder.cc(18950)] [.DisplayCompositor]GL ERROR :GL_INVALID_OPERATION : DoBeginSharedImageAccessCHROMIUM: bound texture is not a shared image
+[61139:775:1005/171151.753164:ERROR:gles2_cmd_decoder.cc(13814)] [.DisplayCompositor]GL ERROR :GL_INVALID_VALUE : glScheduleCALayerCHROMIUM: unsupported texture format
+[61139:775:1005/171151.753370:ERROR:shared_image_manager.cc(143)] SharedImageManager::ProduceGLTexture: Trying to produce a representation from a non-existent mailbox. 13:03:07:AE:64:E6:88:93:4B:83:EE:72:EC:E4:B7:8F
+[61139:775:1005/171151.754494:ERROR:gles2_cmd_decoder.cc(18929)] [.DisplayCompositor]GL ERROR :GL_INVALID_OPERATION : DoCreateAndTexStorage2DSharedImageINTERNAL: invalid mailbox name
+[61139:775:1005/171151.754683:ERROR:gles2_cmd_decoder.cc(18950)] [.DisplayCompositor]GL ERROR :GL_INVALID_OPERATION : DoBeginSharedImageAccessCHROMIUM: bound texture is not a shared image
+[61139:775:1005/171151.754737:ERROR:gles2_cmd_decoder.cc(13814)] [.DisplayCompositor]GL ERROR :GL_INVALID_VALUE : glScheduleCALayerCHROMIUM: unsupported texture format
+[61139:775:1005/171151.754779:ERROR:shared_image_manager.cc(143)] SharedImageManager::ProduceGLTexture: Trying to produce a representation from a non-existent mailbox. 61:C7:40:87:5B:55:E0:7A:5C:D1:AF:4D:65:A4:6A:D5
+[61139:775:1005/171151.754905:ERROR:gles2_cmd_decoder.cc(18929)] [.DisplayCompositor]GL ERROR :GL_INVALID_OPERATION : DoCreateAndTexStorage2DSharedImageINTERNAL: invalid mailbox name
+[61139:775:1005/171151.755076:ERROR:gles2_cmd_decoder.cc(18950)] [.DisplayCompositor]GL ERROR :GL_INVALID_OPERATION : DoBeginSharedImageAccessCHROMIUM: bound texture is not a shared image
+[61139:775:1005/171151.755230:ERROR:gles2_cmd_decoder.cc(13814)] [.DisplayCompositor]GL ERROR :GL_INVALID_VALUE : glScheduleCALayerCHROMIUM: unsupported texture format
+[61139:775:1005/171151.755379:ERROR:shared_image_manager.cc(143)] SharedImageManager::ProduceGLTexture: Trying to produce a representation from a non-existent mailbox. E2:08:0A:57:2A:FF:34:19:F9:4A:E4:77:9B:76:E9:3D
+[61139:775:1005/171151.755443:ERROR:gles2_cmd_decoder.cc(18929)] [.DisplayCompositor]GL ERROR :GL_INVALID_OPERATION : DoCreateAndTexStorage2DSharedImageINTERNAL: invalid mailbox name
+[61139:775:1005/171151.755543:ERROR:gles2_cmd_decoder.cc(18950)] [.DisplayCompositor]GL ERROR :GL_INVALID_OPERATION : DoBeginSharedImageAccessCHROMIUM: bound texture is not a shared image
+[61139:775:1005/171151.755586:ERROR:gles2_cmd_decoder.cc(13814)] [.DisplayCompositor]GL ERROR :GL_INVALID_VALUE : glScheduleCALayerCHROMIUM: unsupported texture format
+[61139:775:1005/171151.786279:ERROR:shared_image_manager.cc(143)] SharedImageManager::ProduceGLTexture: Trying to produce a representation from a non-existent mailbox. 79:59:88:CD:A9:D3:8C:70:2B:42:41:94:24:CF:1A:55
+[61139:775:1005/171151.786441:ERROR:gles2_cmd_decoder.cc(18929)] [.DisplayCompositor]GL ERROR :GL_INVALID_OPERATION : DoCreateAndTexStorage2DSharedImageINTERNAL: invalid mailbox name
+[61139:775:1005/171151.786599:ERROR:gles2_cmd_decoder.cc(18950)] [.DisplayCompositor]GL ERROR :GL_INVALID_OPERATION : DoBeginSharedImageAccessCHROMIUM: bound texture is not a shared image
+[61139:775:1005/171151.786668:ERROR:gles2_cmd_decoder.cc(13814)] [.DisplayCompositor]GL ERROR :GL_INVALID_VALUE : glScheduleCALayerCHROMIUM: unsupported texture format
+[61139:775:1005/171151.786974:ERROR:shared_image_manager.cc(143)] SharedImageManager::ProduceGLTexture: Trying to produce a representation from a non-existent mailbox. B3:80:26:F7:EF:47:B5:E0:33:75:29:13:63:76:85:F9
+[61139:775:1005/171151.787554:ERROR:gles2_cmd_decoder.cc(18929)] [.DisplayCompositor]GL ERROR :GL_INVALID_OPERATION : DoCreateAndTexStorage2DSharedImageINTERNAL: invalid mailbox name
+[61139:775:1005/171151.787621:ERROR:gles2_cmd_decoder.cc(18950)] [.DisplayCompositor]GL ERROR :GL_INVALID_OPERATION : DoBeginSharedImageAccessCHROMIUM: bound texture is not a shared image
+[61139:775:1005/171151.788294:ERROR:gles2_cmd_decoder.cc(13814)] [.DisplayCompositor]GL ERROR :GL_INVALID_VALUE : glScheduleCALayerCHROMIUM: unsupported texture format
+[61139:775:1005/171151.788533:ERROR:shared_image_manager.cc(143)] SharedImageManager::ProduceGLTexture: Trying to produce a representation from a non-existent mailbox. DA:0D:5E:66:8E:E5:A3:75:CC:EB:EB:E0:91:67:E6:23
+[61139:775:1005/171151.788604:ERROR:gles2_cmd_decoder.cc(18929)] [.DisplayCompositor]GL ERROR :GL_INVALID_OPERATION : DoCreateAndTexStorage2DSharedImageINTERNAL: invalid mailbox name
+[61139:775:1005/171151.788822:ERROR:gles2_cmd_decoder.cc(18950)] [.DisplayCompositor]GL ERROR :GL_INVALID_OPERATION : DoBeginSharedImageAccessCHROMIUM: bound texture is not a shared image
+[61139:775:1005/171151.789024:ERROR:gles2_cmd_decoder.cc(13814)] [.DisplayCompositor]GL ERROR :GL_INVALID_VALUE : glScheduleCALayerCHROMIUM: unsupported texture format
+[61139:775:1005/171151.789072:ERROR:shared_image_manager.cc(143)] SharedImageManager::ProduceGLTexture: Trying to produce a representation from a non-existent mailbox. 5A:36:C5:8C:15:63:8B:3E:D8:24:7D:48:4D:A3:07:69
+[61139:775:1005/171151.789249:ERROR:gles2_cmd_decoder.cc(18929)] [.DisplayCompositor]GL ERROR :GL_INVALID_OPERATION : DoCreateAndTexStorage2DSharedImageINTERNAL: invalid mailbox name
+[61139:775:1005/171151.789368:ERROR:gles2_cmd_decoder.cc(18950)] [.DisplayCompositor]GL ERROR :GL_INVALID_OPERATION : DoBeginSharedImageAccessCHROMIUM: bound texture is not a shared image
+[61139:775:1005/171151.789467:ERROR:gles2_cmd_decoder.cc(13814)] [.DisplayCompositor]GL ERROR :GL_INVALID_VALUE : glScheduleCALayerCHROMIUM: unsupported texture format
+[61139:775:1005/171151.789583:ERROR:gles2_cmd_decoder.cc(13814)] [.DisplayCompositor]GL ERROR :GL_INVALID_VALUE : glScheduleCALayerCHROMIUM: unsupported texture format
+[61139:775:1005/171151.789754:ERROR:gles2_cmd_decoder.cc(13814)] [.DisplayCompositor]GL ERROR :GL_INVALID_VALUE : glScheduleCALayerCHROMIUM: unsupported texture format
+[61139:775:1005/171151.795482:ERROR:gles2_cmd_decoder.cc(18979)] [.DisplayCompositor]GL ERROR :GL_INVALID_OPERATION : DoEndSharedImageAccessCHROMIUM: bound texture is not a shared image
+[61139:775:1005/171151.795660:ERROR:gles2_cmd_decoder.cc(18979)] [.DisplayCompositor]GL ERROR :GL_INVALID_OPERATION : DoEndSharedImageAccessCHROMIUM: bound texture is not a shared image
+[61139:775:1005/171151.795898:ERROR:gles2_cmd_decoder.cc(18979)] [.DisplayCompositor]GL ERROR :GL_INVALID_OPERATION : DoEndSharedImageAccessCHROMIUM: bound texture is not a shared image
+[61139:775:1005/171151.796067:ERROR:gles2_cmd_decoder.cc(18979)] [.DisplayCompositor]GL ERROR :GL_INVALID_OPERATION : DoEndSharedImageAccessCHROMIUM: bound texture is not a shared image
+[61139:775:1005/171152.137131:ERROR:gles2_cmd_decoder.cc(18979)] [.DisplayCompositor]GL ERROR :GL_INVALID_OPERATION : DoEndSharedImageAccessCHROMIUM: bound texture is not a shared image
+[61139:775:1005/171152.137304:ERROR:gles2_cmd_decoder.cc(18979)] [.DisplayCompositor]GL ERROR :GL_INVALID_OPERATION : DoEndSharedImageAccessCHROMIUM: bound texture is not a shared image
+[61139:775:1005/171152.137406:ERROR:gles2_cmd_decoder.cc(18979)] [.DisplayCompositor]GL ERROR :GL_INVALID_OPERATION : DoEndSharedImageAccessCHROMIUM: bound texture is not a shared image
+[61139:775:1005/171152.137474:ERROR:gles2_cmd_decoder.cc(18979)] [.DisplayCompositor]GL ERROR :GL_INVALID_OPERATION : DoEndSharedImageAccessCHROMIUM: bound texture is not a shared image
+[61139:775:1005/171152.137529:ERROR:gles2_cmd_decoder.cc(18979)] [.DisplayCompositor]GL ERROR :GL_INVALID_OPERATION : DoEndSharedImageAccessCHROMIUM: bound texture is not a shared image
+[61139:775:1005/171152.137571:ERROR:gles2_cmd_decoder.cc(18979)] [.DisplayCompositor]GL ERROR :GL_INVALID_OPERATION : DoEndSharedImageAccessCHROMIUM: bound texture is not a shared image
+[61131:775:1005/171153.072247:INFO:CONSOLE(53426)] "Angular is running in development mode. Call enableProdMode() to enable production mode.", source: http://localhost:4200/vendor.js (53426)
+[61131:775:1005/171153.145856:INFO:CONSOLE(564)] "this.user undefined", source: http://localhost:4200/main.js (564)
+[61131:775:1005/171153.323625:INFO:CONSOLE(0)] "[DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o", source: http://localhost:4200/ (0)
+[61131:775:1005/171153.497112:INFO:CONSOLE(103193)] "[WDS] Live Reloading enabled.", source: http://localhost:4200/vendor.js (103193)
+[61131:775:1005/171153.724133:INFO:CONSOLE(377)] "No user is currently logged in with GOOGLE", source: http://localhost:4200/polyfills.js (377)
+[61131:775:1005/171155.323714:INFO:CONSOLE(53426)] "Angular is running in development mode. Call enableProdMode() to enable production mode.", source: http://localhost:4200/vendor.js (53426)
+[61131:775:1005/171155.377966:INFO:CONSOLE(564)] "this.user undefined", source: http://localhost:4200/main.js (564)
+[61131:775:1005/171155.458958:INFO:CONSOLE(0)] "[DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o", source: http://localhost:4200/ (0)
+[61131:775:1005/171155.555565:INFO:CONSOLE(103193)] "[WDS] Live Reloading enabled.", source: http://localhost:4200/vendor.js (103193)
+[61131:775:1005/171156.097333:INFO:CONSOLE(377)] "No user is currently logged in with GOOGLE", source: http://localhost:4200/polyfills.js (377)
+[61131:775:1005/171156.367247:INFO:CONSOLE(396)] "", source: http://localhost:4200/main.js (396)
+[61131:775:1005/171157.443552:INFO:CONSOLE(385)] "[object Object]", source: http://localhost:4200/main.js (385)
+[61131:775:1005/171157.449710:INFO:CONSOLE(388)] "requestURL https://postb.in/1601889117337-5864722020924", source: http://localhost:4200/main.js (388)
+[61131:775:1005/171157.450114:INFO:CONSOLE(389)] "binUrl https://postb.in/b/1601889117337-5864722020924", source: http://localhost:4200/main.js (389)
+[61131:775:1005/171157.815172:INFO:CONSOLE(399)] "this is my text", source: http://localhost:4200/main.js (399)
+[61139:775:1005/171157.941382:WARNING:ipc_message_attachment_set.cc(49)] MessageAttachmentSet destroyed with unconsumed attachments: 0/1
+[61131:775:1005/171158.568069:INFO:CONSOLE(53426)] "Angular is running in development mode. Call enableProdMode() to enable production mode.", source: http://localhost:4200/vendor.js (53426)
+[61131:775:1005/171158.588972:INFO:CONSOLE(564)] "this.user undefined", source: http://localhost:4200/main.js (564)
+[61131:775:1005/171158.610600:INFO:CONSOLE(0)] "[DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o", source: http://localhost:4200/ (0)
+[61131:775:1005/171158.676674:INFO:CONSOLE(103193)] "[WDS] Live Reloading enabled.", source: http://localhost:4200/vendor.js (103193)
+[61131:775:1005/171159.338902:INFO:CONSOLE(377)] "No user is currently logged in with GOOGLE", source: http://localhost:4200/polyfills.js (377)
+[61131:775:1005/171202.150515:INFO:CONSOLE(0)] "[DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o", source: https://accounts.google.com/o/oauth2/auth?redirect_uri=storagerelay%3A%2F%2Fhttp%2Flocalhost%3A4200%3Fid%3Dauth37629&response_type=permission%20id_token&scope=email%20profile%20openid&openid.realm=&client_id=852521361299-q90tsiud02gfj9t8lsk3cm1br6894nft&ss_domain=http%3A%2F%2Flocalhost%3A4200&fetch_basic_profile=true&gsiwebsdk=2 (0)
+[61131:775:1005/171222.768753:WARNING:pref_notifier_impl.cc(40)] Pref observer for media_router.cast_allow_all_ips found at shutdown.

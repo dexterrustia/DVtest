@@ -1,6 +1,5 @@
 import { AppPage } from './app.po';
 import { browser, logging, by, element } from 'protractor';
-import { SSL_OP_NO_TICKET } from 'constants';
 
 describe('workspace-project App', () => {
   let page: AppPage;
@@ -34,12 +33,9 @@ describe('workspace-project App', () => {
     let contact = element(by.css('.input-contact-name'));
     contact.sendKeys('this is my text');
 
-    setTimeout(() => {
-      element(by.css('.btn-submit')).click();
-      element(by.css('a-test-link')).click();
-    }, 10000);
+    element(by.css('.btn-submit')).click();
   });
-
+  // not excluded since
   xit('should to go "/profile" after logging in', () => {
     page.navigateTo();
     page.googleLoginButton.click();
